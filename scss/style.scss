@@ -5,11 +5,11 @@
 @import '_baner.scss';  
 @import '_animation.scss';  
 @import '_footer.scss';  
-@import '_mediaquery.scss';  
+/* @import '_mediaquery.scss';  */ 
   
 
 * {
-    margin: 0;
+    margin: auto;
     padding: 0;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -36,7 +36,7 @@ html {
     width: 80%;
     text-align: justify;
     margin: 30px auto; 
-    color: var(--main-font-color);
+    color: var(--secendary-color);
     font-weight: 200;
     font-family: 'Open Sans', sans-serif;
 }
