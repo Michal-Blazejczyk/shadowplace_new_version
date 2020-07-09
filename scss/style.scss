@@ -16,22 +16,13 @@
 }
 html {
     max-width: 1400px;
-    
     margin: auto;
-   /*  font-family: 'Open Sans', sans-serif;
-    font-family: 'Roboto', sans-serif; */
-    /* background-color: white; */
-   /*  color: #fff; */
-   background-color: rgb(235, 245, 245);
-
+    background-color: rgb(235, 245, 245);
 }
  
 .navigation a:nth-last-child {
     display: block;
 }
-  
-
-
 .verticle__description {
     width: 80%;
     text-align: justify;
@@ -40,19 +31,48 @@ html {
     font-weight: 200;
     font-family: 'Open Sans', sans-serif;
 }
-.thumbnail
-{
-    width: 230px;
-    height: 230px;
-    margin: auto;
-    /* -webkit-box-shadow: 10px 0px 70px black;
-            box-shadow: 10px 0px 70px black; */
-   &:hover {
-    border: 2px solid ;
-    /* margin: -2px; */
-    background-size: 130%;
-        }
+.galery__image {
+    width: 300px;
+    height: 300px;
 }
+.galery {       
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+     
+    .galery__item {  
+        display: flex;
+        position: relative;
+        color: transparent;
+        margin: 20px auto; 
+        &::before
+        {
+            content: "";
+            position: absolute;
+             left: 0;
+             bottom: 0;
+             width: 0;
+             height: 100%;
+             transition: 1s linear;
+             background-color: rgba(0, 0, 0, 0.75);
+            } 
+            &:hover::before {
+                width: 100%;
+            }
+            &:hover {
+            color: #ffffff;
+            transition: 2.5s;
+            
+        }
+        .galery__span {
+            position: absolute; 
+            z-index: 8;
+            margin: 15px;
+            text-align: center;
+         }
+    }
+}     
+
 .imageGallery {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -81,7 +101,6 @@ html {
 }
 .current
 {
-    /* border: 2px solid red; */
     margin-bottom: -2px;    
 }
 .image__wrapper{
@@ -109,8 +128,6 @@ html {
         left: 0;
         width: 100%;
         text-align: center;
-        /* font-size: 120px; */
-        /* text-transform: uppercase; */
         -webkit-animation: banner 4s linear infinite;
                 animation: banner 4s linear infinite;
                 color: var(--main-font-color);

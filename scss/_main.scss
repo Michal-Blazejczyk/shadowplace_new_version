@@ -24,7 +24,11 @@
         width: 100%;
         padding: 14px;
         text-transform:uppercase;
-        font-family: 'Open Sans', sans-serif; 
+        font-family: 'Roboto', sans-serif; 
+        font-weight: normal; 
+        @media (max-width: 480px) {
+            font-size: 11px;
+        }
     }
     &__h2 {
         background-color:var(--bg-color-main-html); 
@@ -37,6 +41,9 @@
         margin: auto;
         font-family: 'Roboto', sans-serif;
         letter-spacing: 2px; 
+        @media (max-width: 480px) {
+            font-size: 15px;
+        }
     }
     &__description {
         width: 90%; 
@@ -51,6 +58,12 @@
         padding: 5px;
         font-family: 'Open Sans', sans-serif;
         letter-spacing: 1px;
+        @media (max-width: 640px) {
+            font-size: 15px;
+        }
+        @media (max-width: 480px) {
+            font-size: 10px;
+        }
     }
 }
 .aboutFirst article {
@@ -90,37 +103,7 @@
     {
         transform: scale(1);
     }
-.panel {
-            
-    flex-grow: 1;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-between;
-    width: 90%;
-    margin: auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    }
-    section>.pannel__box {
-        flex-basis: 21%;
-    }
-    section .pannel__box img {
-        width: 100%;
-                
-    }  
-    .color_link {
-        color: var(--primary-color);
-        text-decoration: none;
-    } 
-    .color_link:hover {
-        color: var(--secendary-color);
-    } 
 
-    .panel-widget-style {
-        margin-bottom: 20px;
-        
-    }
 
 .kontakt__wrap {
     display: flex;

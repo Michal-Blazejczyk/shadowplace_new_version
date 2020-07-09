@@ -6,7 +6,7 @@
     height: 50px;
     position: fixed;
     top: 0;
-    font-family: roboto, Arial, Helvetica, sans-serif;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     z-index: 2;
     text-align: center;
     width: 100%;
@@ -27,7 +27,7 @@
         }
         @media (max-width: 480px) {
             .header__item--btn {
-                padding: 10px 50px;
+                padding: 10px 35px;
             }  
         }
     }

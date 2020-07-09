@@ -2,7 +2,6 @@
     max-width: 1400px;
     margin-top: 30px;
     &__menu {
-        /*   display: block; */
         color: black;
         text-align: center;
         background-color:  rgb(110,194,192);
@@ -13,6 +12,17 @@
         color: black;
         font-size: 14px;
         margin: 60px;   
+        @media (max-width: 640px) {
+            margin: 12px;
+        }
+        @media (max-width: 480px) {
+            margin: 26px;
+        }
+        @media (max-width: 408px) {
+            display: flex;
+            justify-content: center;
+            margin: 2px;
+        }
     }
     &__menu a:hover {
         color: var(--primary-color);
