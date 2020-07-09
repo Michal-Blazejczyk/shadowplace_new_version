@@ -702,6 +702,10 @@ label {
   color: #fdd197;
 }
 
+.move_baner-picture:hover {
+  border: 2px solid #f18e04;
+}
+
 .look__p {
   color: black;
   margin-top: 20px;
@@ -1221,20 +1225,14 @@ html {
   display: block;
 }
 
-.verticle__description {
-  width: 80%;
-  text-align: justify;
-  margin: 30px auto;
-  color: var(--secendary-color);
-  font-weight: 200;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.galery__image {
-  width: 300px;
-  height: 300px;
-}
-
+/* .verticle__description {
+    width: 80%;
+    text-align: justify;
+    margin: 30px auto; 
+    color: var(--secendary-color);
+    font-weight: 200;
+    font-family: 'Open Sans', sans-serif;
+} */
 .galery {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -1282,8 +1280,30 @@ html {
 .galery .galery__item .galery__span {
   position: absolute;
   z-index: 8;
-  margin: 15px;
+  margin: 50px auto;
   text-align: center;
+}
+
+.galery .galery__image {
+  width: 300px;
+  height: 300px;
+}
+
+.galery .galery__image--logo {
+  text-align: center;
+  width: 40%;
+  position: absolute;
+  top: -50px;
+  left: 10px;
+}
+
+.color_link {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.color_link:hover {
+  color: var(--secendary-color);
 }
 
 .imageGallery {

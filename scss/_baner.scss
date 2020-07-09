@@ -140,6 +140,7 @@
         -webkit-box-shadow: 2px 4px 45px black;
                 box-shadow: 2px 4px 45px black;
         cursor: pointer;
+        
         @media (max-width: 800px) {
             width: 200px;
         }
@@ -179,6 +180,9 @@
     h2:hover {
         color: rgb(253, 209, 151);
     }  
+}
+.move_baner-picture:hover {
+    border: 2px solid #f18e04;
 }
 .look__p {    
     color: black;
