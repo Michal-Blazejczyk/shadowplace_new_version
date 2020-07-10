@@ -172,7 +172,11 @@
         margin: 15px;
         -webkit-box-shadow: 2px 4px 45px black;
         box-shadow: 2px 4px 45px black;
-        cursor: pointer;     
+        cursor: pointer;  
+        @media (max-width: 480px) {
+            height: 100px;
+
+        }  
     } 
     &--link {
         text-decoration: none;

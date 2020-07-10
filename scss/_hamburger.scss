@@ -1,28 +1,38 @@
 .menu-btn {
   position: fixed;
-  z-index: 6;
-  right: 1rem;
+  z-index: 10;
+  right: 2rem;
   top: 3rem;
-  height: 20px;
-  width: 28px;
+  /* height: 40px;
+  width: 38px; */
   cursor: pointer;
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   display: block;
   padding: 30px;
+  
 }
-
+.nav__menu {
+  z-index: 7;
+  position: fixed;
+  color: red;
+  font-weight: 700;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  right: 30px;
+  top: 50px;
+}
 .menu-btn__burger {
   position: absolute;
-  right: 40px;
-  top: 02rem;
-  width: 30px;
-  height: 3px;
+  right: 10px;
+  top: 2rem;
+  width: 30px; 
+  height: 5px;
   background: red;
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+ 
 }
 
 .menu-btn__burger::before {
@@ -30,7 +40,7 @@
   position: absolute;
   top: -8px;
   width: 28px;
-  height: 3px;
+  height: 5px;
   background: red;
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
@@ -42,7 +52,7 @@
   position: absolute;
   top: 8px;
   width: 20px;
-  height: 3px;
+  height: 5px;
   background: red;
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
@@ -75,9 +85,14 @@
   width: 35vw;
   opacity: 0.9;
   visibility: hidden;
-  z-index: 4;
-  font-family: 'Open Sans', sans-serif
- 
+  z-index: 9;
+  font-family: 'Open Sans', sans-serif;
+    @media (max-width: 800px) {
+      width: 50%;
+    }
+    @media (max-width: 640px) {
+      width: 100%;
+    }
 }
 
 .nav.open {
@@ -135,7 +150,6 @@
   display: inline-block;
   font-size: 16px;
   text-transform: uppercase;
-  padding: 10px 0;
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -145,4 +159,16 @@
 
 .nav .menu-nav__link:hover {
   color: #ff652f;
+}
+.baner--logo {
+  position: absolute;
+  width: 90px;
+  top: 0;
+  right: 10px;
+  @media (max-width: 800px) {
+    width: 70px;
+  }
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
